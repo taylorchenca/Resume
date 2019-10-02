@@ -1,0 +1,151 @@
+%-------------------------
+% Resume in Latex
+% Author : Taylor Chen
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\bulletItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Haoyao Chen} &  \href{mailto:hchen7@scu.edu}{hchen7@scu.edu} $\vert$ (949) 293-2620 \\
+  San Jose, CA & linkedin.com/in/hchencs\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Santa Clara University}{Santa Clara, CA}
+      {Master of Science in Computer Science and Engineering}{Sep 2019 -- Jun 2021}
+   
+      \textbf{Relevant coursework (planned):} Design and Analysis of Algorithms, Database Systems, Distributed Systems, Cloud Computing, Mobile Application Development, Artificial Intelligence
+
+      \resumeSubheading
+      {University of California, Davis}{Davis, CA}
+      {Bachelor of Science in Computer Science and Engineering}{Oct 2014 -- Jun 2016}
+
+      \textbf{Relevant coursework:} Data Structures and Algorithms, Discrete Math, Operating Systems, Computer Architecture, Computer Networks, Programming Languages, Software Engineering
+  \resumeSubHeadingListEnd
+
+% --------Technical Skillset------------
+\section{Technical Skillset}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{Java, Scala, Python, Javascript}
+\resumeSubItem{Technologies}{Apache Spark, Angular.js, HTML, CSS, Git, Unix Commands, Atlassian Suite, Jenkins, LaTex}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {UiPath}{Tokyo, Japan}
+      {Technical Consultant}{Oct 2018 - Aug 2019}
+      \begin{itemize} 
+        \bulletItem {Won company-wide "Best Project Award" for delivering successful 6 million USD project. Team size: 10}
+        \bulletItem {Established coding convention, version control, CI/CD for a large software development project involving more than 100 developers}
+        \bulletItem {Hosted weekly tech seminar for more than 40 developers for discussions on best practice in software development}
+        \bulletItem {Trained developers to become proficient with UiPath's software development environment}
+        \bulletItem {Gathered customer feedback on UiPath's products coordinated product feature development}
+      \end{itemize}
+
+    \resumeSubheading
+      {Rakuten}{Tokyo, Japan}
+      {Software Engineer}{Oct 2016 - Sep 2018}
+      \begin{itemize} 
+        \bulletItem {Conducted stages of the software development life cycle including requirement definition, design, coding, testing, release operation, trouble handling, and maintenance}
+        \bulletItem {Led effort to adopt Apache Spark to scale up data pipelines. Established organization-wide best practice for Spark program design and performance tuning}
+        \bulletItem {Coordinated development projects between business development teams and software product development teams to ensure that software products are developed to precise specification}
+        \bulletItem {Mentored new graduates to help them become successful members of my organization}
+        \bulletItem {Implemented Agile methodology for team of 10 developers and led weekly Scrum meetings}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Data pipeline scale-up}
+      {Led effort to scale-up Ad business's data pipeline using Apache Spark. Replaced inefficient existing codebase with scalable Spark programs. The new data pipeline programs, capable of processing billions of lines of log data per day, allowed the Ad business to expand and double its profit}
+    \resumeSubItem{Ad recommendation service}
+      {Built Hive queries that analyze performance of Ad campaigns and trends in search terms. Created web application with Java, Angular.js, and MySQL that recommends to Ad owners on how to best to spend their Ad budget based on the aforementioned analysis. Achieved 20\% increase in Ad profit}
+    \resumeSubItem{OCR solution}
+      {Established metrics for OCR (optical character recognition) accuracy and created Python scripts that gauges OCR performance. Delivered OCR solution using ABBYY OCR, cutting manual data entry by 10,000 man hour per year}
+    \resumeSubItem{Memory exercise game}
+      {Built interactive web game using Javascript as part of a research on human memory}
+  \resumeSubHeadingListEnd
+
+\end{document}

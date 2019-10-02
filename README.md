@@ -1,2 +1,2 @@
 # resume
- Haoyao Chen's resume. 
+ Taylor Chen's resume. 
