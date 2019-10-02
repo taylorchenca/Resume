@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
+% Author : Taylor Chen
 % License : MIT
 %------------------------
 
@@ -43,6 +43,11 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\bulletItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -74,8 +79,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+  \textbf{\Large Haoyao Chen} &  \href{mailto:hchen7@scu.edu}{hchen7@scu.edu} $\vert$ (949) 293-2620 \\
+  San Jose, CA & linkedin.com/in/hchencs\\
 \end{tabular*}
 
 
@@ -83,99 +88,64 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+      {Santa Clara University}{Santa Clara, CA}
+      {Master of Science in Computer Science and Engineering}{Sep 2019 -- Jun 2021}
+   
+      \textbf{Relevant coursework (planned):} Design and Analysis of Algorithms, Database Systems, Distributed Systems, Cloud Computing, Mobile Application Development, Artificial Intelligence
+
+      \resumeSubheading
+      {University of California, Davis}{Davis, CA}
+      {Bachelor of Science in Computer Science and Engineering}{Oct 2014 -- Jun 2016}
+
+      \textbf{Relevant coursework:} Data Structures and Algorithms, Discrete Math, Operating Systems, Computer Architecture, Computer Networks, Programming Languages, Software Engineering
   \resumeSubHeadingListEnd
 
+% --------Technical Skillset------------
+\section{Technical Skillset}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{Java, Scala, Python, Javascript}
+\resumeSubItem{Technologies}{Apache Spark, Angular.js, HTML, CSS, Git, Unix Commands, Atlassian Suite, Jenkins, LaTex}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
-      \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
+      {UiPath}{Tokyo, Japan}
+      {Technical Consultant}{Oct 2018 - Aug 2019}
+      \begin{itemize} 
+        \bulletItem {Won company-wide "Best Project Award" for delivering successful 6 million USD project. Team size: 10}
+        \bulletItem {Established coding convention, version control, CI/CD for a large software development project involving more than 100 developers}
+        \bulletItem {Hosted weekly tech seminar for more than 40 developers for discussions on best practice in software development}
+        \bulletItem {Trained developers to become proficient with UiPath's software development environment}
+        \bulletItem {Gathered customer feedback on UiPath's products coordinated product feature development}
+      \end{itemize}
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
-      \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
-
+      {Rakuten}{Tokyo, Japan}
+      {Software Engineer}{Oct 2016 - Sep 2018}
+      \begin{itemize} 
+        \bulletItem {Conducted stages of the software development life cycle including requirement definition, design, coding, testing, release operation, trouble handling, and maintenance}
+        \bulletItem {Led effort to adopt Apache Spark to scale up data pipelines. Established organization-wide best practice for Spark program design and performance tuning}
+        \bulletItem {Coordinated development projects between business development teams and software product development teams to ensure that software products are developed to precise specification}
+        \bulletItem {Mentored new graduates to help them become successful members of my organization}
+        \bulletItem {Implemented Agile methodology for team of 10 developers and led weekly Scrum meetings}
+      \end{itemize}
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeSubItem{Data pipeline scale-up}
+      {Led effort to scale-up Ad business's data pipeline using Apache Spark. Replaced inefficient existing codebase with scalable Spark programs. The new data pipeline programs, capable of processing billions of lines of log data per day, allowed the Ad business to expand and double its profit}
+    \resumeSubItem{Ad recommendation service}
+      {Built Hive queries that analyze performance of Ad campaigns and trends in search terms. Created web application with Java, Angular.js, and MySQL that recommends to Ad owners on how to best to spend their Ad budget based on the aforementioned analysis. Achieved 20\% increase in Ad profit}
+    \resumeSubItem{OCR solution}
+      {Established metrics for OCR (optical character recognition) accuracy and created Python scripts that gauges OCR performance. Delivered OCR solution using ABBYY OCR, cutting manual data entry by 10,000 man hour per year}
+    \resumeSubItem{Memory exercise game}
+      {Built interactive web game using Javascript as part of a research on human memory}
   \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
 \end{document}
