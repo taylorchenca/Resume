@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Taylor Chen
+% Author : Haoyao Chen
 % License : MIT
 %------------------------
 
@@ -49,24 +49,31 @@
   }
 }
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item[]\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeProject}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{0pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -116,10 +123,9 @@
       {Technical Consultant}{Oct 2018 - Aug 2019}
       \begin{itemize} 
         \bulletItem {Won company-wide "Best Project Award" for delivering successful 6 million USD project. Team size: 10}
-        \bulletItem {Established coding convention, version control, CI/CD for a large software development project involving more than 100 developers}
-        \bulletItem {Hosted weekly tech seminar for more than 40 developers for discussions on best practice in software development}
-        \bulletItem {Trained developers to become proficient with UiPath's software development environment}
-        \bulletItem {Gathered customer feedback on UiPath's products coordinated product feature development}
+        \bulletItem {Established coding convention, version control, CI/CD, improving developer productivity for a large software development project involving more than 100 developers }
+        \bulletItem {Hosted weekly tech seminar for more than 40 developers for discussions on best practice in software development to help improve code quality}
+        \bulletItem {Gathered customer feedback on UiPath's products coordinated product feature development, increasing customer satisfaction and making UiPath competitive}
       \end{itemize}
 
     \resumeSubheading
@@ -137,15 +143,16 @@
 
 %-----------PROJECTS-----------------
 \section{Projects}
+
   \resumeSubHeadingListStart
-    \resumeSubItem{Data pipeline scale-up}
-      {Led effort to scale-up Ad business's data pipeline using Apache Spark. Replaced inefficient existing codebase with scalable Spark programs. The new data pipeline programs, capable of processing billions of lines of log data per day, allowed the Ad business to expand and double its profit}
-    \resumeSubItem{Ad recommendation service}
-      {Built Hive queries that analyze performance of Ad campaigns and trends in search terms. Created web application with Java, Angular.js, and MySQL that recommends to Ad owners on how to best to spend their Ad budget based on the aforementioned analysis. Achieved 20\% increase in Ad profit}
-    \resumeSubItem{OCR solution}
-      {Established metrics for OCR (optical character recognition) accuracy and created Python scripts that gauges OCR performance. Delivered OCR solution using ABBYY OCR, cutting manual data entry by 10,000 man hour per year}
-    \resumeSubItem{Memory exercise game}
-      {Built interactive web game using Javascript as part of a research on human memory}
+  \resumeProject{OCR solution (UiPath)}{Jun 2019 - Aug 2019}    
+Established metrics for OCR (optical character recognition) accuracy and created Python scripts that gauges OCR performance. Delivered OCR solution using ABBYY OCR, cutting manual data entry by 10,000 man hour per year
+
+\resumeProject{Data pipeline scale-up (Rakuten)}{Sep 2017 - Mar 2018}
+Led effort to scale-up Ad business's data pipeline using Apache Spark. Replaced inefficient existing codebase with scalable Spark programs. The new data pipeline programs, capable of processing billions of lines of log data per day, allowed the Ad business to expand and double its profit
+\resumeProject{Ad recommendation service (Rakuten)}{Jun 2017 - Sep 2017}
+Built Hive queries that analyze performance of Ad campaigns and trends in search terms. Created web application with Java, Angular.js, and MySQL that recommends to Ad owners on how to best to spend their Ad budget based on the aforementioned analysis. Achieved 20\% increase in Ad profit
+
   \resumeSubHeadingListEnd
 
 \end{document}
