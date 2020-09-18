@@ -2,13 +2,7 @@
 % Resume in Latex
 % Author : Haoyao Chen
 % License : MIT
-%------------------------
-% Jul 27 notes / TODO 
-% Emphasize remote work skills 
-% Quantify impact at Amazon
-% Change present to Sep 2020? 
-% Combining project with experience? 
-% Clean up courses section for SCU
+%------------------------ 
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -85,8 +79,6 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -95,43 +87,39 @@
   San Jose, CA & linkedin.com/in/hchencs\\
 \end{tabular*}
 
-
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Santa Clara University}{Santa Clara, CA}
       {Master of Science in Computer Science  GPA: 3.96/4.00}{Sep 2019 -- Mar 2021}
-      \begin{itemize}      
-        \bulletItem{\textbf{Relevant courses:} Design and Analysis of Algorithms, Database Systems, Distributed Systems, Cloud Computing, Parallel Programming, Web Search and Information Retrieval, Big Data, Software Architecture}
-      \end{itemize}
       \resumeSubheading
       {University of California, Davis}{Davis, CA}
       {Bachelor of Science in Computer Science  GPA: 3.22/4.00 (including transfer units)}{Oct 2014 -- Jun 2016}
-      \begin{itemize}      
-        \bulletItem{\textbf{Relevant courses:} Data Structures, Object-oriented Programming, Discrete Math, Operating Systems, Computer Architecture, Computer Networks, Programming Languages, Software Engineering, Machine Learning}
-      \end{itemize}
-      
   \resumeSubHeadingListEnd
+
+% --------Relevant Courses------------
+\section{Relevant Courses}
+Data Structures and Algorithms, Operating Systems, Computer Architecture, Computer Networks, Software Engineering, Database Systems, Distributed Systems, Cloud Computing, Parallel Programming
 
 % --------Technical Skillset------------
 \section{Technical Skillset}
 \resumeSubHeadingListStart
-\resumeSubItem{Languages}{Java, C, C++, PHP, JavaScript, Python}
-\resumeSubItem{Technologies}{Unix/Linux, Git, MySQL, DynamoDB, Apache Spark, Hadoop, Selenium, Jenkins, HTML, CSS}
+\resumeSubItem{Languages}{Java, C, C++, JavaScript, Python, Scala}
+\resumeSubItem{Other skills}{Unix/Linux, Git, Apache Spark, Apache Kafka, Hadoop, HDFS, Jenkins, Maven, AWS (S3, EC2, CloudFormation, IAM, DynamoDB, RDS), RESTful API, SQL, NoSQL, MongoDB, GraphQL, React, Angular JS}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Amazon Web Services}{East Palo Alto, CA}
+    {Amazon Web Services}{Santa Clara, CA}
     {Software Engineer Intern}{Jun 2020 - Sep 2020}
     \begin{itemize} 
-      \bulletItem {Lead own internship project with minimal supervision and guidance}
-      \bulletItem {Owned all stages of software development including requirement definition, functional design, architecture design, coding, unit testing, integration testing, deployment, and metrics collection}
-      \bulletItem {Coordinated collaboration with external teams by communicating project purposes and specifications}
-      \bulletItem {Contributed to colleagues' work through design reviews and code reviews}
+      \bulletItem {Demonstrated technical competency by owning all stages of software development including requirement definition, functional design, architecture design, coding, unit testing, integration testing, deployment, and metrics collection}
+      \bulletItem {Contributed to colleagues' work through design reviews and code reviews on a daily basis}
+      \bulletItem {Ensured timely and high-quality delivery of my project through proactive communication with product managers, software development managers, internal and external software engineers}
+      \bulletItem {Won a full-time return offer for recognition of my job performance and work ethics}
     \end{itemize}
 
     \resumeSubheading
@@ -139,19 +127,18 @@
       {Technical Consultant}{Oct 2018 - Aug 2019}
       \begin{itemize} 
         \bulletItem {Won company-wide \textit{Best Project Award} for successfully delivering a USD 6 million project. Team size: 10}
-        \bulletItem {Developed web application for system admins to monitor batch jobs}
-        \bulletItem {Established coding convention, version control, CI/CD, improving developer productivity for a large software development project involving more than 100 developers}
+        \bulletItem {Established coding convention, version control, CI/CD for a development project with more 100 developers}
         \bulletItem {Hosted weekly tech seminar to help more than 40 developers improve code quality}
-        \bulletItem {Gathered customer feedback on UiPath's products and coordinated product feature development, increasing customer satisfaction and making UiPath competitive}
+        \bulletItem {Coordinated product feature development by gathering customer feedback and communicating those feedback with development teams, increasing customer satisfaction and making UiPath competitive}
       \end{itemize}
 
     \resumeSubheading
       {Rakuten}{Tokyo, Japan}
       {Software Engineer}{Oct 2016 - Sep 2018}
       \begin{itemize} 
-        \bulletItem {Developed web applications for clients to purchase and manage Ad campaigns}
+        \bulletItem {Developed web applications (backend) for clients to purchase and manage Ad campaigns}
         \bulletItem {Led effort to adopt Apache Spark to scale up data pipelines. Established best practice for Spark program design and performance tuning}
-        \bulletItem {Coordinated development projects between business development teams and software product development teams to ensure that software products are developed to precise specification}
+        \bulletItem {Coordinated development projects between business development teams and software development teams to ensure that software products are developed to precise specification}
         \bulletItem {Mentored new graduates to help them become successful members of my organization}
       \end{itemize}
   \resumeSubHeadingListEnd
@@ -161,10 +148,11 @@
 \section{Projects}
 
   \resumeSubHeadingListStart
-    \resumeProject{Data API Granular Control (Amazon Web Services)}{Jun 2020 - Sep 2020}
+    \resumeProject{Cloud Database Granular Control (Amazon Web Services)}{Jun 2020 - Sep 2020}
     \begin{itemize} 
-      \bulletItem{Created public APIs for AWS customers to configure their RDS database usage}
-      \bulletItem{Delivered value to some of AWS's largest customers by bringing highly demanded features from conception to release in a short time}
+      \bulletItem{Built highly demanded feature for customers to apply scaling configurations to their cloud databases} 
+      \bulletItem{Created additional public APIs and backend logic for a rapidly growing service with 2,000 customers and 3 billion requests per day}
+      \bulletItem{Completed all stages of the project, from design to beta release, in 10 weeks}
     \end{itemize}
 
   \resumeProject{Data pipeline scale-up (Rakuten)}{Sep 2017 - Mar 2018}
