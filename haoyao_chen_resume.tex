@@ -16,7 +16,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 
-\pagestyle{fancy}
+\pagestyle{fancy} 
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
@@ -83,7 +83,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Haoyao Chen} &  \href{mailto:hchen7@scu.edu}{hchen7@scu.edu} $\vert$ (949) 293-2620 \\
+  \textbf{\Large Haoyao Chen} &  \href{mailto:haoyao.chen.work@gmail.com}{haoyao.chen.work@gmail.com} $\vert$ (949) 293-2620 \\
   San Jose, CA & linkedin.com/in/hchencs\\
 \end{tabular*}
 
@@ -100,13 +100,15 @@
 
 % --------Relevant Courses------------
 \section{Relevant Courses}
-Data Structures and Algorithms, Operating Systems, Computer Architecture, Computer Networks, Software Engineering, Database Systems, Distributed Systems, Cloud Computing, Parallel Programming
+Data Structures and Algorithms, Operating Systems, Computer Architecture, Computer Networks, \\
+Software Engineering, Database Systems, Distributed Systems, Cloud Computing, Parallel Programming, Machine Learning
 
 % --------Technical Skillset------------
 \section{Technical Skillset}
 \resumeSubHeadingListStart
-\resumeSubItem{Languages}{Java, C, C++, JavaScript, Python, Scala}
-\resumeSubItem{Other skills}{Unix/Linux, Git, Apache Spark, Apache Kafka, Hadoop, HDFS, Jenkins, Maven, AWS (S3, EC2, CloudFormation, IAM, DynamoDB, RDS), RESTful API, SQL, NoSQL, MongoDB, GraphQL, React, Angular JS}
+\resumeSubItem{Languages}{Java, C, C++, Python, Scala, Javascript}
+% \resumeSubItem{Other skills}{Unix/Linux, Git, Apache Spark, Apache Kafka, Hadoop, HDFS, SQL, NoSQL, MongoDB, MySQL, RESTful API, GraphQL, React, Angular JS, Jenkins, Maven, AWS (S3, EC2, CloudFormation, IAM, DynamoDB, RDS)}
+\resumeSubItem{Other skills}{Unix/Linux, Git, Apache Spark, Apache Hive, Apache Kafka, SQL, NoSQL, MySQL, Apache, Tomcat, AWS (S3, EC2, CloudFormation, IAM, DynamoDB, RDS, EMR), HTML, CSS}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -116,50 +118,56 @@ Data Structures and Algorithms, Operating Systems, Computer Architecture, Comput
     {Amazon Web Services}{Santa Clara, CA}
     {Software Engineer Intern}{Jun 2020 - Sep 2020}
     \begin{itemize} 
-      \bulletItem {Demonstrated technical competency by owning all stages of software development including requirement definition, functional design, architecture design, coding, unit testing, integration testing, deployment, and metrics collection}
-      \bulletItem {Contributed to colleagues' work through design reviews and code reviews on a daily basis}
-      \bulletItem {Ensured timely and high-quality delivery of my project through proactive communication with product managers, software development managers, internal and external software engineers}
-      \bulletItem {Won a full-time return offer for recognition of my job performance and work ethics}
+      \bulletItem {Won a \textbf{full-time return offer} for recognition of my job performance and work ethics.}
+      \bulletItem {Developed a highly demanded feature for a growing cloud database service with 2,000 customers and 3 billion requests per day. This feature provides a public API for customers to apply configurations, including connection limit, to their database instances.}
+      \bulletItem {Created a thorough design for my project that includes user interface, architecture, data schema, and logic flow.}
+      \bulletItem {Wrote code with attention to details and quality, maintaining pull request revisions to fewer than 3.}
+      \bulletItem {Demonstrated ownership by driving the project from requirement definition to release in 10 weeks.}
+      \bulletItem {Ensured timely delivery of my project through proactive communication with stakeholders inside and outside my organization.}
+      \bulletItem {Raised the quality bar for my colleagues' work through design reviews and code reviews on a daily basis, going beyond the requirement for interns.}
+      \bulletItem {Boosted morale for my team by organizing online and offline social activities while working remotely.}
     \end{itemize}
 
     \resumeSubheading
       {UiPath}{Tokyo, Japan}
       {Technical Consultant}{Oct 2018 - Aug 2019}
       \begin{itemize} 
-        \bulletItem {Won company-wide \textit{Best Project Award} for successfully delivering a USD 6 million project. Team size: 10}
-        \bulletItem {Established coding convention, version control, CI/CD for a development project with more 100 developers}
-        \bulletItem {Hosted weekly tech seminar to help more than 40 developers improve code quality}
-        \bulletItem {Coordinated product feature development by gathering customer feedback and communicating those feedback with development teams, increasing customer satisfaction and making UiPath competitive}
+        \bulletItem {Won company-wide \textit{Best Project Award} for successfully delivering a USD 6 million project. (Team size: 10)}
+        \bulletItem {Established coding convention, version control, CI/CD for a development project with more 100 developers.}
+        \bulletItem {Hosted weekly tech seminar introduce development best practices, helping more than 40 developers improve productivity and code quality.}
+        \bulletItem {Discovered and reproduced 10 regressions of a major software version, contributing to its successful release.}
+        \bulletItem {Coordinated product feature development by gathering customer feedback and communicating those feedback with development teams, increasing customer satisfaction and making UiPath competitive.}
       \end{itemize}
 
     \resumeSubheading
       {Rakuten}{Tokyo, Japan}
       {Software Engineer}{Oct 2016 - Sep 2018}
       \begin{itemize} 
-        \bulletItem {Developed web applications (backend) for clients to purchase and manage Ad campaigns}
-        \bulletItem {Led effort to adopt Apache Spark to scale up data pipelines. Established best practice for Spark program design and performance tuning}
-        \bulletItem {Coordinated development projects between business development teams and software development teams to ensure that software products are developed to precise specification}
-        \bulletItem {Mentored new graduates to help them become successful members of my organization}
+        \bulletItem {Developed web applications for clients to purchase and manage Ad campaigns.}
+        \bulletItem {Led effort to scale up a growing Ad business by migrating data pipelines to Apache Spark. Established best practice for Spark program design and performance tuning.}
+        \bulletItem {Created business intelligence dashboards to visualize search trends and Ad sales opportunities, enabling business teams to prioritize Ad clients based on revenue potential.} 
+        \bulletItem {Coordinated development projects between business development teams and software development teams to ensure that software products are developed to precise specification.}
+        \bulletItem {Improved system stability and service quality by proactively fixing bugs in backlog.}
+        \bulletItem {Mentored new graduates to help them become successful members of my organization.}
       \end{itemize}
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------------
-\section{Projects}
+% \section{Projects}
 
-  \resumeSubHeadingListStart
-    \resumeProject{Cloud Database Granular Control (Amazon Web Services)}{Jun 2020 - Sep 2020}
-    \begin{itemize} 
-      \bulletItem{Built highly demanded feature for customers to apply scaling configurations to their cloud databases} 
-      \bulletItem{Created additional public APIs and backend logic for a rapidly growing service with 2,000 customers and 3 billion requests per day}
-      \bulletItem{Completed all stages of the project, from design to beta release, in 10 weeks}
-    \end{itemize}
+%   \resumeSubHeadingListStart
+%     \resumeProject{Cloud Database Granular Control (Amazon Web Services)}{Jun 2020 - Sep 2020}
+%     \begin{itemize} 
+%       \bulletItem{Built highly demanded feature for customers to apply scaling configurations to their cloud databases} 
+%       \bulletItem{Created additional public APIs and backend logic for a rapidly growing service with 2,000 customers and 3 billion requests per day}
+%       \bulletItem{Completed all stages of the project, from design to beta release, in 10 weeks}
+%     \end{itemize}
 
-  \resumeProject{Data pipeline scale-up (Rakuten)}{Sep 2017 - Mar 2018}
-    \begin{itemize} 
-      \bulletItem{Led effort to scale-up Ad business's data pipeline using Apache Spark}
-      \bulletItem{Created new data pipelines that can efficiently process billions of lines of log data per day}
-    \end{itemize}
-  \resumeSubHeadingListEnd
+%   \resumeProject{Data pipeline scale-up (Rakuten)}{Sep 2017 - Mar 2018}
+%     \begin{itemize} 
+%       \bulletItem{Led effort to scale-up Ad business's data pipeline using Apache Spark}
+%       \bulletItem{Created new data pipelines that can efficiently process billions of lines of log data per day}
+%     \end{itemize}
+%   \resumeSubHeadingListEnd
 
 \end{document}
